@@ -78,7 +78,6 @@ void draw(){
   
   if(viewscreen) {
     //begin attitude control
-    if(!attitudeControl) beginDrift();
     
     //starfield simulation
     for(int i = 0; i < stars. length; i++){
@@ -129,7 +128,7 @@ void init(){
     println(item);
   }
   //engineering adjustments
-  DeregulateDilithuimColumator();
+
   //location
   earth = new Planet(2*width/3, height/4, 50);
   moon = new Planet(2.1*width/3, height/3, 10);
